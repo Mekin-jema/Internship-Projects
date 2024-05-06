@@ -77,6 +77,24 @@ nav .nav__links {
 .logo h1 {
   color: chocolate;
 }
+.nav__links button {
+  padding: 9px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  margin-right: 50px;
+}
+.nav__links button:hover {
+  cursor: pointer;
+  /* background: #000000; */
+  border: solid 2px black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgb(217, 228, 233);
+}
+.nav__links button:hover::after {
+  width: 100%;
+}
 
 .nav__links a {
   position: relative;
