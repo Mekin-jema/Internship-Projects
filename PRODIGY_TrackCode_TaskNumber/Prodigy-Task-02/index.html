@@ -4,16 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Stopwatch web Application</title>
   </head>
   <body>
-    <h1 id="myH1">Stopwatch</h1>
-    <div class="container">
-      <div class="display">00:00:00:00</div>
-      <div id="controls">
-        <button type="button" id="startBtn" onclick="start()">Start</button>
-        <button type="button" id="stopBtn" onclick="stops()">Stop</button>
-        <button type="button" id="resetBtn" onclick="reset()">Reset</button>
+    <div class="stopwatch-body">
+      <h1 id="myH1">Stopwatch</h1>
+      <div class="container">
+        <div class="display">00:00:00:00</div>
+        <div id="controls">
+          <button type="button" id="startBtn" onclick="start()">
+            <i class="fa-solid fa-play"></i>
+          </button>
+          <button type="button" id="stopBtn" onclick="stops()">
+            <i class="fa-solid fa-stop"></i>
+          </button>
+          <button type="button" id="resetBtn" onclick="reset()">
+            <i class="fa-solid fa-00"></i>Reset
+          </button>
+        </div>
       </div>
     </div>
     <script src="main.js"></script>
