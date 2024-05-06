@@ -3,18 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Style.css" />
     <title>Stopwatch web Application</title>
   </head>
   <body>
     <h1 id="myH1">Stopwatch</h1>
     <div class="container">
-      <div id="display">00:00:00:00</div>
+      <div class="display">00:00:00:00</div>
       <div id="controls">
-        <button id="startBtn" onclick="Start()">Start</button>
-        <button id="stopBtn" onclick="Stop()">Stop</button>
-        <button id="resetBtn" onclick="Reset()">Reset</button>
+        <button type="button" id="startBtn" onclick="start()">Start</button>
+        <button type="button" id="stopBtn" onclick="stops()">Stop</button>
+        <button type="button" id="resetBtn" onclick="reset()">Reset</button>
       </div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
