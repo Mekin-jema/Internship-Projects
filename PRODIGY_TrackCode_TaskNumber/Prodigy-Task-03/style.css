@@ -1,18 +1,66 @@
+body {
+  background-color: #d5ccd5;
+  margin: 0;
+  padding: 0;
+}
+
+#gameContainer h1 {
+  color: #156f5f;
+  margin-bottom: 20px;
+}
+
+#gameContainer button {
+  background-color: #296624;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#gameContainer button:hover {
+  background-color: #29e21c;
+}
+
 .cell {
-  width: 75px;
+  width: 70px;
   height: 75px;
-  border: 2px solid;
+  border: 3px solid #333;
+  border-radius: 5px;
   font-size: 50px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
 }
+
+.cell:hover {
+  background-color: #f2f2f2;
+}
+
+.cell:active {
+  transform: scale(0.95);
+}
+
 #gameContainer {
   font-family: "permanent Marker", cursive;
   text-align: center;
+  margin-top: 50px;
 }
 
 #cellContainer {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  width: 225px;
+  width: 250px;
+  height: 270px;
   margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
 }
